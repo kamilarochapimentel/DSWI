@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/png">
+    <title>ACME Produtos</title>
+<style>
+
+
+
+:root{
+        
+        --color_white: #fff;
+        --color_dark1: #272727;
+        --color_dark2: #2d2d2d;
+        --color_dark3: #414141;
+        --color_dark4: #1c1c1c;
+        --color_dark5: #343434;
+        --color_blue: #00a9e5;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--color_white);
+        color: var(--color_dark3);
+        
+    }
+    .logo_header{
+        /*tamanho da imagem*/
+        width: 45px;
+    }
+
+    .header,
+    .navegacaoHeader{
+         /*uma ao lado do outro*/
+        display: flex;
+       
+        /*itens alinha entre si*/
+        align-items: center;
+    }
+
+    .header{
+        background-color: var(--color_dark2);
+        /* sombra no header*/
+        box-shadow: 1px 1px 4px var(--color_dark4);
+        height: 70px;
+        /* espacamento entre as classes*/
+        justify-content: space-between;
+        /* margens das laterais*/
+        padding: 0 10%;
+    }
+    .navegacaoHeader{
+         /* espacamento entre as palavras*/
+        gap: 48px;
+    }
+
+    .navegacaoHeader a{
+         /*tirar o sublinhado*/
+        text-decoration: none;
+        color: var(--color_blue);
+        font-weight: bold;
+    }
+     
+    .elementos_corpo{
+        display: flex;
+        align-items: center;
+        margin: 50px 300px;
+        gap: 30px;
+      
+    }
+  
+    .tituloPrincipal{
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .imageCentral{
+        width: 170px;
+    }
+
+    .texto{
+        text-align: center;
+        text-align: justify;
+        
+        line-height: 1.3;
+ 
+    }
+
+    #imagem_rodape{
+        /*tamanho da imagem*/
+        width: 23px;
+    }
+
+  #rodape{
+        background-color: var(--color_dark3);
+        color: var(--color_white);
+        height: 30px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        position: flex;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+    }
+
+ 
+</style>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo_header">
+           <img src="favicon.ico" alt="Logo ACME"> 
+        </div>
+
+        <div class="navegacaoHeader">
+            <a href="home.html" >Home</a>
+            <a href="missao.html">Missão</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+    </div>
+
+    <div class="conteudo" id="conteudo">
+        <h1 class="tituloPrincipal">Produtos</h1>
+
+        
+        <div class="elementos_corpo" id="elemento1">
+            <h3 class="subtitulo">Bomba</h3>
+            <img class="imageCentral" src="./imagem/bomb.png" alt="Imagem Bomba"> 
+            <p class="texto">
+                Laborum commodo enim consequat velit eiusmod anim occaecat. Ex sit elit excepteur labore sint. In sunt ea
+                occaecat enim proident cillum anim fugiat sit incididunt tempor. Duis magna mollit duis proident ullamco
+                incididunt est in. Exercitation do Lorem anim esse id mollit. Labore non voluptate aliquip laboris laboris
+                proident officia nostrud laboris. Nulla amet pariatur duis magna deserunt commodo.
+                </p>
+        </div>
+
+        <div class="elementos_corpo" id="elemento2">
+            <h3 class="subtitulo">Bolsa</h3>
+            <img class="imageCentral" src="./imagem/bag.png" alt="Imagem Bolsa"> 
+            <p class="texto"> Ut nulla id in tempor voluptate enim non commodo labore. Culpa eiusmod fugiat tempor occaecat est
+                laborum duis cillum. Id tempor incididunt aliquip elit ex dolore reprehenderit cupidatat pariatur amet.
+                Aliquip tempor sunt reprehenderit id nisi. Eu labore adipisicing consequat labore cillum ad ipsum in veniam
+                deserunt irure aliqua. Reprehenderit officia in esse enim nostrud adipisicing elit ea ad dolor minim
+                exercitation. Cupidatat irure enim elit non labore.
+                
+                </p>
+        </div>
+
+        <div class="elementos_corpo" id="elemento3">
+            <h3 class="subtitulo">Míssil</h3>
+            <img class="imageCentral" src="./imagem/missile.png" alt="Imagem Míssil"> 
+            <p class="texto">Cupidatat eu non incididunt labore qui in anim laborum aute. Nisi est velit id cillum cupidatat nulla Lorem
+                cupidatat adipisicing aliqua. Ea commodo et esse cillum mollit aute laborum eiusmod non sint sint nisi.
+                </p>
+        </div>
+
+        <div class="elementos_corpo" id="elemento4">
+            <h3 class="subtitulo">Rocha</h3>
+            <img class="imageCentral" src="./imagem/rock.png" alt="Imagem Rocha"> 
+            <p class="texto">Do enim id ut irure cupidatat cupidatat in sint irure eiusmod id ullamco nisi tempor. Non enim in Lorem
+                laborum eu exercitation elit. Sint laborum qui consectetur dolore irure cupidatat proident sunt. Veniam
+                exercitation eiusmod eiusmod labore minim occaecat consectetur non commodo incididunt deserunt
+                adipisicing est. Consectetur irure Lorem qui nulla voluptate quis ullamco aliqua nisi magna non nostrud
+                veniam.
+                </p>
+        </div>
+
+        <div class="elementos_corpo" id="elemento5">
+            <h3 class="subtitulo">Corda</h3>
+            <img class="imageCentral" src="./imagem/rope.png" alt="Imagem Rocha"> 
+            <p class="texto">Minim aliqua velit velit sit in eu occaecat ut eu laboris minim. Irure esse laborum mollit consequat labore id
+                aute est veniam. Qui ut officia id nulla. Proident excepteur laborum duis sint voluptate proident Lorem esse
+                mollit enim ullamco non ut non. Culpa deserunt do do aliquip incididunt duis nostrud laboris ea aliquip esse
+                nulla. Commodo sint sit Lorem in laboris consectetur ea. Aliqua non qui id ut officia labore duis
+                reprehenderit duis aute et laborum adipisicing occaecat.
+                
+                </p>
+        </div>
+
+        <div class="elementos_corpo" id="elemento6">
+            <h3 class="subtitulo">Tijolo</h3>
+            <img class="imageCentral" src="./imagem/brick.png" alt="Imagem Rocha"> 
+            <p class="texto">Reprehenderit reprehenderit ea aliqua dolor amet nulla ad ea magna dolor dolor culpa aliquip fugiat. Id
+                consequat Lorem aliqua Lorem excepteur labore adipisicing laboris non ullamco. Proident occaecat nostrud
+                consequat exercitation reprehenderit magna sint exercitation nisi id nulla. Dolor Lorem in dolor dolore
+                reprehenderit commodo sit veniam cillum ullamco incididunt ad laboris. Aute Lorem labore pariatur laboris
+                esse duis eu ut elit consequat nisi cillum cillum. Sunt voluptate est commodo fugiat voluptate excepteur
+                officia aliqua deserunt mollit consectetur. Exercitation officia Lorem incididunt sit.
+                ACME produtos e serviços. Todos os direitos reservados.
+                </p>
+        </div>
+
+     </div>
+
+ <footer>
+    <div id="rodape">
+        <img class="conteudo_rodape" id="imagem_rodape" src="./imagem/acme br.png" alt="Logo ACME"> 
+        <h5 class="conteudo_rodape"> ACME produtos e serviços. Todos os direitos reservados.</h5>
+    </div>
+ </footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/png">
+    <title>ACME Serviços</title>
+<style>
+
+
+
+:root{
+        
+        --color_white: #fff;
+        --color_dark1: #272727;
+        --color_dark2: #2d2d2d;
+        --color_dark3: #414141;
+        --color_dark4: #1c1c1c;
+        --color_dark5: #343434;
+        --color_blue: #00a9e5;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--color_white);
+        color: var(--color_dark3);
+        
+    }
+    .logo_header{
+        /*tamanho da imagem*/
+        width: 45px;
+    }
+
+    .header,
+    .navegacaoHeader{
+         /*uma ao lado do outro*/
+        display: flex;
+       
+        /*itens alinha entre si*/
+        align-items: center;
+    }
+
+    .header{
+        background-color: var(--color_dark2);
+        /* sombra no header*/
+        box-shadow: 1px 1px 4px var(--color_dark4);
+        height: 70px;
+        /* espacamento entre as classes*/
+        justify-content: space-between;
+        /* margens das laterais*/
+        padding: 0 10%;
+    }
+    .navegacaoHeader{
+         /* espacamento entre as palavras*/
+        gap: 48px;
+    }
+
+    .navegacaoHeader a{
+         /*tirar o sublinhado*/
+        text-decoration: none;
+        color: var(--color_blue);
+        font-weight: bold;
+    }
+
+
+    .tituloPrincipal{
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .subtitulo{
+       margin: 25px 200px;
+       text-align: left;
+      
+
+    }
+
+    .texto{
+       margin: 20px 200px;
+       text-align: justify;
+       line-height: 1.3;
+ 
+    }
+
+    #imagem_rodape{
+        /*tamanho da imagem*/
+        width: 23px;
+    }
+
+  #rodape{
+        background-color: var(--color_dark3);
+        color: var(--color_white);
+        height: 30px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo_header">
+           <img src="favicon.ico" alt="Logo ACME"> 
+        </div>
+
+        <div class="navegacaoHeader">
+            <a href="home.html" >Home</a>
+            <a href="missao.html">Missão</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+    </div>
+
+    <div class="conteudo" id="conteudo">
+        <h1 class="tituloPrincipal">Serviços</h1>
+
+        <h3 class="subtitulo">Desenvolvimento de produtos</h3>
+        <p class="texto">
+        Eiusmod eiusmod amet do enim ut amet. Non dolor tempor mollit incididunt aliquip. Amet dolore ipsum qui
+        culpa commodo nostrud laborum commodo labore ad.</p>
+
+        <h3 class="subtitulo">Fabricação customizada</h3>
+        <p class="texto">In ex occaecat pariatur magna exercitation. Eu reprehenderit officia quis laboris laborum deserunt
+            reprehenderit ad. Mollit sit sint magna aliqua sunt ullamco ut non in commodo consectetur ad. Culpa laboris
+            ipsum laborum mollit tempor aliquip ipsum amet. Non eu adipisicing dolor commodo laborum dolor veniam
+            qui cupidatat nulla non. Exercitation dolor velit cillum deserunt exercitation id. Enim elit duis aliquip sint
+            excepteur Lorem.</p>
+     </div>
+
+ <footer>
+    <div id="rodape">
+        <img class="conteudo_rodape" id="imagem_rodape" src="./imagem/acme br.png" alt="Logo ACME"> 
+        <h5 class="conteudo_rodape"> ACME produtos e serviços. Todos os direitos reservados.</h5>
+    </div>
+ </footer>
+
+</body>
+</html>
