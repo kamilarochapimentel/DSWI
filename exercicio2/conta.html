@@ -5,49 +5,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Criar conta</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
         <header>
-            <h1>Crie uma nova conta</h1>
+        <h1 class="titulo">Crie uma nova conta</h1>
         </header>
     
         <main>
-            <form method="post" action="/conta">
-    
+            <div class="caixa">
+              <form class ="cadastro" method="post" action="/conta">
+              
                 <fieldset>
-                    <h2>Conta</h2>
-                    <ul>
-                        <li> <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome"><br>
-                        </li>
-                        <li><label for="sobrenome">Sobrenome:</label>
-                            <input type="text" id="sobrenome" name="sobrenome"><br>
-                        </li>
-                        <li><label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email"><br>
-                        </li>
-                        <li><label for="senha">Senha:</label>
-                            <input type="password" id="senha" name="senha"><br>
-                        </li>
-                        <li><label for="repetirsenha">Repita a senha:</label>
-                            <input type="password" id="repetirsenha" name="repetirsenha"><br>
-                        </li>
-                    </ul>
-                </fieldset>
+                       <legend><b>Conta</b></legend>
+                       <br>
+                      <div class="input_box">
+                        <label for="nome" class="nome_label">Nome:</label>
+                        <input type="text" id="nome" name="nome" class= "input_user"><br>
+                      </div> <br><br>
+                        <div class="input_box"> 
+                        <label for="sobrenome" class="nome_label">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" class= "input_user"><br>
+                       </div> <br><br>
+                       <div class="input_box">
+                       <label for="email" class="nome_label">E-mail:</label>
+                       <input type="email" id="email" name="email" class= "input_user" required><br>
+                       </div> <br><br>
+                       <div class="input_box">
+                      <label for="senha" class="nome_label">Senha:</label>
+                      <input type="password" id="senha" name="senha" class= "input_user" required><br>
+                      </div> <br><br>
+                      <div class="input_box">
+                      <label for="repetirsenha" class="nome_label">Repita a senha:</label>
+                       <input type="password" id="repetirsenha" name="repetirsenha" class= "input_user" required><br>
+                       </div> <br>
+                </fieldset> <br>
+
                 <fieldset>
-                    <h2>Endereço</h2>
-                    <ul>
-                        <li><label for="logradouro">Logradouro:</label>
-                            <input type="text" id="logradouro" name="logradouro"><br>
-                        </li>
-                        <li><label for="complemento">Complemento:</label>
-                            <input type="text" id="complemento" name="complemento"><br>
-                        </li>
-                        <li> <label for="cidade">Cidade:</label>
-                            <input type="text" id="cidade" name="cidade"><br>
-                        </li>
-                        <li><label for="estado">Estado:</label>
+                    <legend><b>Endereço</b></legend>
+                    <br>
+                            <div class="input_box">
+                            <label for="logradouro" class="nome_label">Logradouro:</label>
+                            <input type="text" id="logradouro" name="logradouro" class= "input_user"><br>
+                            </div> <br><br>
+                            <div class="input_box">
+                            <label for="complemento" class="nome_label">Complemento:</label>
+                            <input type="text" id="complemento" name="complemento" class= "input_user"><br>
+                            </div> <br><br>
+                            <div class="input_box">
+                            <label for="cidade" class="nome_label">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" class= "input_user"><br>
+                            </div> <br><br>
+                            <div class="input_box">
+                            <label for="estado">Estado:</label>
                             <select id="estado" name="estado">
                                 <option value="" disabled selected>Selecione um estado</option>
                                 <option value="ac">Acre</option>
@@ -76,67 +87,63 @@
                                 <option value="sp">São Paulo</option>
                                 <option value="se">Sergipe</option>
                                 <option value="to">Tocantins</option>
-                        
-                        </select> </li>
-                        <li> <label for="cep">CEP:</label>
-                            <input type="text" name="cep" id="cep" placeholder="XXXXX-XXX" maxlength="9">
-                        </li>
-                    </ul>
-    
-                </fieldset>
+                            </select> 
+                            </div> <br><br>
+                            <div class="input_box">
+                            <label for="cep" class="nome_label">CEP:</label>
+                            <input type="text" name="cep" id="cep" placeholder="XXXXX-XXX" maxlength="9" class= "input_user">
+                            </div> <br>
+                </fieldset> <br>
+
                 <fieldset>
-                    <h2>Perfil</h2>
-                    <ul>
-                        <li>
+                            <legend><b>Perfil</b></legend>
+                            <br>
+                            <div class="input_box">
                             <label for="foto">Foto:</label>
                             <input type="file" name="arquivo" id="arquivo">
                             <p>Tamanho máximo de 700k, JPG, GIF, PNG.</p>
-                        </li>
-                        <li>
-                            <label for="nome">Nome:</label>
-                            <input type="text" name="nome" id="nome">
-                        </li>
-                        <li>
-                            <label for="site">Site:</label>
-                            <input type="text" name="site" id="site">
-                        </li>
+                           </div> <br><br>
+                           <div class="input_box"> 
+                            <label for="nome" class="nome_label">Nome:</label>
+                            <input type="text" name="nome" id="nome" class= "input_user">
+                           </div> <br><br>
+                           <div class="input_box"> 
+                            <label for="site" class="nome_label">Site:</label>
+                            <input type="text" name="site" id="site" class= "input_user">
+                            </div> <br><br>
+                            <div class="input_box"> 
                         <p>Tem um site ou um blog? Coloque o endereço aqui.</p>
-                        <li><label for="mensagem">Biografia:</label>
+                            <label for="mensagem">Biografia:</label>
                             <textarea id= "mensagem" name="mensagem" rows="10" cols="50">
-                                </textarea>
-                        </li>
-                        <li><label for="genero">Gênero:</label>
-    
+                            </textarea> </div> <br> <div> 
+                            <label for="genero">Gênero:</label>
+                            <input type="radio" name="genero" id="genero">
                             <label for="genero">Masculino</label>
                             <input type="radio" name="genero" id="genero">
                             <label for="genero">Feminino</label>
                             <input type="radio" name="genero" id="genero">
                             <label for="genero">Outro</label>
-                            <input type="radio" name="genero" id="genero">
-                        </li>
-                    </ul>
-                </fieldset>
+                            </div>
+                        </fieldset> <br>
+
                 <fieldset>
-                    <h2>E-mails</h2>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="envio_mensagens" id="mensagens">
-                            <label for="envio_mensagens">Tudo bem em enviar e-mails com mensagens de outros
-                                usuários.</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="envio_produtos" id="mensagens">
-                            <label for="envio_produtos">Tudo bem em enviar e-mails ocasionais com promoções sobre outros
-                                produtos.</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <input type="submit" value="Criar conta">
-                  
-                </fieldset>
+                    <legend><b>E-mails</b></legend><br>
+                            <div class="input_box">
+                            <input type="checkbox" name="envio_mensagens" id="mensagens"required>
+                            <label for="envio_mensagens">Tudo bem em enviar e-mails com mensagens de outros usuários.</label>
+                            </div>
+                            <div class="input_box">
+                            <input type="checkbox" name="envio_produtos" id="mensagens"required>
+                            <label for="envio_produtos">Tudo bem em enviar e-mails ocasionais com promoções sobre outros produtos.</label>
+                            </div> 
+                </fieldset> <br>
+
+                    <button type="submit" name="submiti" id="submit"><b>Criar conta</b></button> <br>
+               
             </form>
+        </div>
         </main>
+
     </body>
     </html>
 

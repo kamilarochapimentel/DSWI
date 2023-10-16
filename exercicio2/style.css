@@ -1,0 +1,102 @@
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(247, 93, 183), rgb(49, 86, 250));
+    /* box-shadow: 1px 1px 4px black;
+    background-image:url(../exercicio2/imagem/flores.jpg); */
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;  
+}
+
+legend{
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    padding: 10px;
+    /* text-align: left; */
+    background-color: black;
+    border-radius: 8px;
+    color: rgb(255, 114, 232);
+    margin: 0 2%; 
+}
+
+.caixa{
+    position: absolute;
+    color: black;
+}
+
+fieldset{
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 302px; 
+    /* text-shadow: 0 0 3px rgb(185, 110, 82); */
+    /* box-shadow: 1px 1px 4px black; */
+}
+
+.input_user{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black ;
+    /* tira o contorno do box quando esta digitando */
+    outline: none;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    /* espacamento das letras */
+    letter-spacing: 2px;
+}
+
+#estado, textarea{
+    resize:none;
+    /* width: 100%; */
+    outline: none;
+    background: none;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+textarea:focus-within{
+    border: none;
+    box-shadow: 1px 1px 4px black;
+}
+
+button{ 
+    border-radius: 5px;
+}
+
+
+header{
+    justify-content: center;
+    display: flex;
+}
+
+#arquivo{
+    border: 0;
+}
+
+::placeholder{
+    color:rgb(162, 26, 167);
+    font-style: italic;
+
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(247, 93, 183), rgb(49, 86, 250));
+    border: 3px solid black;
+    padding: 15px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+
+    width: 15%;
+    margin: 1% 25%;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(165, 61, 122), rgb(32, 59, 179));
+}
