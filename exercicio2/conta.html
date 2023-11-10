@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imagem/letra_K.png" type="image/png">
         <title>Criar conta</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -101,8 +102,8 @@
                             <div class="input_box">
                             <label for="foto">Foto:</label>
                             <input type="file" name="arquivo" id="arquivo">
-                            <p>Tamanho máximo de 700k, JPG, GIF, PNG.</p>
-                           </div> <br><br>
+                            <h5>Tamanho máximo de 700k, JPG, GIF, PNG.</h5>
+                           </div> <br>
                            <div class="input_box"> 
                             <label for="nome" class="nome_label">Nome:</label>
                             <input type="text" name="nome" id="nome" class= "input_user">
@@ -111,11 +112,13 @@
                             <label for="site" class="nome_label">Site:</label>
                             <input type="text" name="site" id="site" class= "input_user">
                             </div> <br><br>
-                            <div class="input_box"> 
-                        <p>Tem um site ou um blog? Coloque o endereço aqui.</p>
-                            <label for="mensagem">Biografia:</label>
+                            <div class="input_box" id="caixa_bio"> 
+                            <label for="mensagem">Biografia:</label><br>
                             <textarea id= "mensagem" name="mensagem" rows="10" cols="50">
-                            </textarea> </div> <br> <div> 
+                            </textarea> 
+                            <label>Tem um site ou um blog? Coloque o endereço aqui.</label></div>
+                            <br><br>
+                            <div> 
                             <label for="genero">Gênero:</label>
                             <input type="radio" name="genero" id="genero">
                             <label for="genero">Masculino</label>

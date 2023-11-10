@@ -1,3 +1,8 @@
+:root{
+    --color_white: #fff;
+    --color_dark: #000000;
+}  
+
 body{
    
     font-family: Arial, Helvetica, sans-serif;
@@ -12,10 +17,10 @@ body{
 
 legend{
     font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
+    border: 1px solid var(--color_dark);
     padding: 10px;
     /* text-align: left; */
-    background-color: black;
+    background-color: var(--color_dark);
     border-radius: 8px;
     color: rgb(255, 114, 232);
     margin: 0 2%; 
@@ -23,11 +28,11 @@ legend{
 
 .caixa{
     position: absolute;
-    color: black;
+    color: var(--color_dark);
 }
 
 fieldset{
-    border: 3px black solid;
+    border: 3px solid var(--color_dark);
     border-radius: 10px;
     width: 50%;
     margin: 0 302px; 
@@ -38,10 +43,10 @@ fieldset{
 .input_user{
     background: none;
     border: none;
-    border-bottom: 1px solid black ;
+    border-bottom: 1px solid var(--color_dark) ;
     /* tira o contorno do box quando esta digitando */
     outline: none;
-    color: black;
+    color:var(--color_dark);
     font-size: 15px;
     width: 100%;
     /* espacamento das letras */
@@ -50,19 +55,19 @@ fieldset{
 
 #estado, textarea{
     resize:none;
-    /* width: 100%; */
     outline: none;
     background: none;
-    border: 1px solid black;
+    border: 1px solid var(--color_dark);
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
     border-radius: 10px;
 }
+textarea{width: 100%;}
 
 textarea:focus-within{
     border: none;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px var(--color_dark);
 }
 
 button{ 
@@ -87,9 +92,9 @@ header{
 
 #submit{
     background-image: linear-gradient(to right, rgb(247, 93, 183), rgb(49, 86, 250));
-    border: 3px solid black;
+    border: 3px solid var(--color_dark);
     padding: 15px;
-    color: black;
+    color: var(--color_dark);
     font-size: 15px;
     cursor: pointer;
 
@@ -99,4 +104,9 @@ header{
 
 #submit:hover{
     background-image: linear-gradient(to right, rgb(165, 61, 122), rgb(32, 59, 179));
+}
+
+
+#caixa_bio{
+    align-items: center;
 }
