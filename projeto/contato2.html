@@ -35,20 +35,12 @@
         
         <div id="informationContainer">
             <article class="search-box">
-                <input class="search-txt" type="text" name="search" placeholder="Busque por item ou loja"/>
+                <input class="search-txt" type="text" name="search" placeholder="Campo de busca"/>
                 <button class="search-btn" href="#"> <i class="bi bi-search"></i></button>
             </article>
 
             <article id="address">
-                <!-- <select id="local-entrega" name="local-entrega">
-                <option value="">Local da Entrega</option>
-                disabled selected
-                <option value="endereço1">Endereço1</option>
-                <option value="endereço2">Endereço2</option>
-                <option value="endereço3">Endereço3</option>
-                </select>  -->
-
-                <a href="#">
+                  <a href="#">
                     <i class="bi bi-person"></i>
                 </a>
                 <a href="#">
@@ -61,23 +53,54 @@
 
     <!-- MAIN -->
     <main>
-        <article>
-            <h1>Formulário de contato</h1>
+        <div>
+            <h1>Fale Conosco</h1>
+            <hr width="50%">
+
             <div id="feedback">
-                <form>
-                    <article>
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome">
-                    </article>
-                    <article>
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email">
-                    </article>
-                    <textarea name="comment" id="comment" placeholder="Deixe aqui seu comentário" maxlength="500"></textarea>
-                    <button> Enviar </button>
+                <form action="" method="post">
+                    <div>
+                        <label for="nome">Nome*</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail*</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                <div>
+                <label for="motivacao">Motivo*</label>
+                 <select id="motivacao" name="motivacao" required>
+                <option value=""  disabled selected>Escolha o motivo do contato</option>
+                <option value="Informação">Informação</option>
+                <option value="Elogio">Elogio</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Crítica">Crítica</option>
+                <option value="Vendas">Vendas</option>
+                </select> 
+                </div>
+
+                    <div>
+                    <label for="comentario">Mensagem*</label>
+                    <textarea name="comentario" id="comentario" placeholder="Deixe aqui seu comentário" maxlength="500" required></textarea>
+                    </div>
+
+                    <div class="marcacao-termos">
+                        <input type="checkbox" id="news" name="news">
+                        <label for="news">Quero receber e-mails de produtos.</label>
+                        
+                        <input type="checkbox" id="termo" name="termo" required>
+                        <label for="termo">Li e entendi os termos  da política da privacidade.</label>
+                    </div>
+                    <div>
+                    <input type="submit" id="enviar" name="enviar" value="Enviar">
+                    <input type="reset" id="limpar" name="limpar" value="Limpar">
+                    </div>
                 </form>
             </div>
-        </article>
+
+        </div>
 
 
 

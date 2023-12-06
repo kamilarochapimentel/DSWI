@@ -4,9 +4,6 @@
 :root{
     --color_white: #ffffff;
     --color_black: #000000;
-    --color_red: #E81D19;
-    --color_red2:#770d0b;
-    --color_green: #4EA571;
     --color_roxo: #4b1c71;
     --color_lilas: #7f4ca5;
     --color_lilas2: #b57edc;
@@ -15,7 +12,6 @@
     --color_gray:#808080;
     --color_gray2:#717171;
     --color_gray3:#3E3E3E;
-    --color_yellow:#FCBB00;
 }
 
 * {
@@ -134,16 +130,6 @@ header nav a li {
     margin-right: 10px;
 }
 
-/* #local-entrega {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.096);
-    cursor: pointer;
-    margin-right: 10px;
-} */
-
-
 /* MAIN */
 
 #newYasmim {
@@ -207,10 +193,6 @@ footer .footer-container{
     padding: 3rem 3.5rem;
 }
 
-/* footer .footer-container a:hover{
-    color:var( --color_whithe)
- } */
-
 footer .footer-container img{
 height: 4rem;
 }
@@ -222,21 +204,7 @@ footer .footer-container ul{
 
 footer .footer-container h3{
     margin-bottom: 6%;
-    /* font-weight: 30%; */
 }
-
-/* footer .footer-container .redes-sociais img{
-    margin-right: 10px;
-    height: 50px;
-   } */
-
-/* footer .footer-container p{
-   margin: 5% 0%;
-} */
-
-/* footer .footer-container ul > p{
- margin-bottom: 40%;
-} */
 
 footer .footer-container li{
     margin: 1% 0%;
@@ -254,8 +222,6 @@ footer .footer-container a{
 
  footer .footer-container i{
     transition: .4s;
-    /* margin-right: 0%; */
-    /* para aumentar os icones */
     font-size: 200%;
  }
 
@@ -277,7 +243,6 @@ footer .footer-container a{
 .footer-segundo img{
     width: 3%;
     padding: 1% 0%;
-    /* gap: 5%; */
  }
 
 #rodape-direitos{
