@@ -60,19 +60,19 @@
             <div id="feedback">
                 <form action="" method="post">
                     <div>
-                        <label for="nome">Nome*</label>
-                        <input type="text" name="nome" id="nome" required>
+                        <label for="nome">Nome*</label><br>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
                     </div>
 
                     <div>
-                        <label for="email">E-mail*</label>
-                        <input type="email" name="email" id="email" required>
+                        <label for="email">E-mail*</label><br>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
                     </div>
 
                 <div>
-                <label for="motivacao">Motivo*</label>
+                <label for="motivacao">Motivo*</label><br>
                  <select id="motivacao" name="motivacao" required>
-                <option value=""  disabled selected>Escolha o motivo do contato</option>
+                <option value=""  disabled selected><span class="select-frase">Escolha o motivo do contato</span></option>
                 <option value="Informação">Informação</option>
                 <option value="Elogio">Elogio</option>
                 <option value="Sugestão">Sugestão</option>
@@ -82,20 +82,20 @@
                 </div>
 
                     <div>
-                    <label for="comentario">Mensagem*</label>
+                    <label for="comentario">Mensagem*</label><br>
                     <textarea name="comentario" id="comentario" placeholder="Deixe aqui seu comentário" maxlength="500" required></textarea>
                     </div>
 
                     <div class="marcacao-termos">
                         <input type="checkbox" id="news" name="news">
                         <label for="news">Quero receber e-mails de produtos.</label>
-                        
+                        <br>
                         <input type="checkbox" id="termo" name="termo" required>
                         <label for="termo">Li e entendi os termos  da política da privacidade.</label>
                     </div>
-                    <div>
-                    <input type="submit" id="enviar" name="enviar" value="Enviar">
-                    <input type="reset" id="limpar" name="limpar" value="Limpar">
+                    <div id="botoes-todos" >
+                    <input type="submit" id="enviar" name="enviar" value="Enviar"  class="botoes">
+                    <input type="reset" id="limpar" name="limpar" value="Limpar"  class="botoes">
                     </div>
                 </form>
             </div>
