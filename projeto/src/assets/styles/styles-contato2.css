@@ -132,8 +132,8 @@ header nav a li {
 
 /* MAIN */
 main {
-    margin: 40px;
-}
+    margin:3%;
+ }
 
 h1 {
     color: var(--color_gray2);
@@ -154,7 +154,7 @@ hr{
 
 #email, #nome{
     height: 40px;
-    width: 50%;
+    width: 75%;
     border-radius: 10rem;
     border: 0.1rem solid var(--color_lilas);
 }
@@ -167,12 +167,12 @@ hr{
 }
 select {
     height: 40px;
-    width: 50%;
+    width: 75%;
     border: 0.1rem solid var(--color_lilas);
  }
 
 #feedback textarea {
-    width: 50%;
+    width: 75%;
     height: 10rem;
     border: 0.1rem solid var(--color_lilas);
     line-height: 1.5;
@@ -196,6 +196,19 @@ select {
 #limpar{
     display: relative;
     margin: 0 10px;
+}
+
+#img-contato {
+    width: 30rem;
+    margin:3%;
+    margin-bottom:20%;
+    padding: 3%;
+}
+.roses-tabela{
+    width: 40%;
+    display: absolute;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* FOOTER 1 */
