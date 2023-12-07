@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/assets/styles/styles-contato2.css">
     <link rel="shortcut icon" href="src/assets/images/favicon-32x32-.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="botaoLimpar.js"> </script>
 </head>
 <body>
     <header>
@@ -61,14 +62,14 @@
                 <tr> <td>
 
             <div id="feedback">
-                <form action="" method="post">
+                <form action="./contato2.html" method="post">
 
-                    <div>
+                    <div class="inputForm">
                         <label for="nome">Nome*</label><br>
                         <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
                     </div>
 
-                    <div>
+                    <div class="inputForm">
                         <label for="email">E-mail*</label><br>
                         <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
                     </div>
@@ -85,7 +86,7 @@
                 </select> 
                 </div>
 
-                    <div>
+                    <div class="inputForm">
                     <label for="comentario">Mensagem*</label><br>
                     <textarea name="comentario" id="comentario" placeholder="Deixe aqui seu comentário" maxlength="500" required></textarea>
                     </div>
@@ -100,7 +101,7 @@
 
                     <div id="botoes-todos" >
                     <input type="submit" id="enviar" name="enviar" value="Enviar"  class="botoes">
-                    <input type="reset" id="limpar" name="limpar" value="Limpar"  class="botoes">
+                    <input type="reset" id="limpar" name="limpar" value="Limpar"  class="botoes" onclick="showAlert()">
                     </div>
 
                 </form>
